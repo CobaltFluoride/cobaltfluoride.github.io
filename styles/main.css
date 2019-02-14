@@ -12,10 +12,9 @@ body {
 }
 
 .header .label {
-	flex: 0;
+	flex: 1;
 	
 	color: #303030;
-	text-shadow: 0px 0px 4px #202020;
 	font-size: 1.4em;
 }
 
@@ -31,5 +30,8 @@ body {
 	
 	padding: 4px 8px;
 	
-	box-shadow: inset 0px -2px 0px #3090c0;
+	font-weight: bold;
+	text-decoration: none;
+	
+	box-shadow: inset 0px 2px 0px #3090c0;
 }
