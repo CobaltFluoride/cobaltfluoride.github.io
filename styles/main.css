@@ -19,14 +19,14 @@ body {
 }
 
 .header .nav {
-	flex: 1;
+	flex: 0.3;
 }
 
 .header .nav a {
 	display: inline-block;
 	border: none;
 	background-color: #104070;
-	color: #ffffff;
+	color: #f4f4f4;
 	
 	padding: 4px 8px;
 	
@@ -34,4 +34,12 @@ body {
 	text-decoration: none;
 	
 	box-shadow: inset 0px 2px 0px #3090c0;
+	
+	transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.header .nav a:hover {
+	color: #ffffff;
+	background-color: #3090c0;
+	box-shadow: inset 0px 2px 0px #50b0e0;
 }
