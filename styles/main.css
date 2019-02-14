@@ -3,7 +3,33 @@ body {
 	font-family: Arial;
 }
 .header {
+	display: flex;
 	padding: 12px;
 	background-color: rgba(230,230,230,0.7);
 	box-shadow: 0px 0px 10px #202020;
+	
+	flex-direction: row;
+}
+
+.header .label {
+	flex: 0;
+	
+	color: #303030;
+	text-shadow: 0px 0px 4px #202020;
+	font-size: 1.4em;
+}
+
+.header .nav {
+	flex: 1;
+}
+
+.header .nav a {
+	display: inline-block;
+	border: none;
+	background-color: #104070;
+	color: #ffffff;
+	
+	padding: 4px 8px;
+	
+	box-shadow: inset 0px -2px 0px #3090c0;
 }
