@@ -25,6 +25,7 @@ body {
 
 .header .nav {
 	flex: 0.3;
+	text-align: right;
 }
 
 .header .nav a {
