@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: Arial;
-	background-image: url("mlpw.jpg");
+	background-image: url("/backgrounds/mlpw.jpg");
 }
 .header {
 	position: fixed;
