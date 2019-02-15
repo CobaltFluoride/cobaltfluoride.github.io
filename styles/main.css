@@ -62,3 +62,23 @@ h1 {
 	font-family: Arial;
 	font-weight: normal;
 }
+
+.viewer {
+	border: 1px solid #c0c0c0;
+	background-color: #f7f7f7;
+}
+.viewer .header {
+	font-size: 1.2em;
+	text-align: center;
+}
+.viewer .description {
+	
+}
+
+.viewer .app {
+	
+}
+
+.center {
+	text-align: center;
+}
