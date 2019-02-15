@@ -14,6 +14,8 @@ body {
 	background-color: rgba(230,230,230,0.7);
 	box-shadow: 0px 0px 10px #202020;
 	
+	box-sizing: border-box;
+	
 	flex-direction: row;
 }
 
