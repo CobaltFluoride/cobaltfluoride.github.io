@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: Arial;
+	background-image: url("mlpw.jpg");
 }
 .header {
 	position: fixed;
@@ -50,11 +51,9 @@ body {
 }
 
 .doc {
-	max-width: 612pt;
-	margin: 45pt auto 20pt auto;
-	
+	margin: 50pt;
 	border: 1px solid #c0c0c0;
-	background-color: #f7f7f7;
+	background-color: rgba(255,255,255,0.9);
 	padding: 20pt;
 }
 
