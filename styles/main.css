@@ -43,3 +43,19 @@ body {
 	background-color: #3090c0;
 	box-shadow: inset 0px 2px 0px #50b0e0;
 }
+
+.doc {
+	max-width: 612pt;
+	margin: 20pt auto;
+	
+	border: 1px solid #c0c0c0;
+	background-color: #f7f7f7;
+	padding: 20pt;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.4em;
+	font-family: Arial;
+	font-weight: normal;
+}
