@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mod 1 Discussion IsaacL</title>
+		<style>
+			body {
+				margin: 8px;
+				font-family: Helvetica;
+			}
+			
+			.wb {
+				border: none;
+				padding: 12px;
+				background-color: #fcfcfc;
+			}
+			
+			.wb:hover {
+			}
+			
+			button {
+				border: none;
+				padding: 4px 12px;
+				background-color: #ffffff;
+				box-shadow: 0px 0px 5px #a0a0a0;
+				transition: background-color 0.2s;
+			}
+			
+			button:hover {
+				background-color: #f7f7f7;
+			}
+			
+			.attachments {
+				margin: 10px 0;
+				padding: 8px;
+				display: none;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+			
+			.label {
+				padding: 4px;
+				margin: 0 0 5px 0;
+				border-bottom: 2px solid #a0a0a0;
+			}
+			
+			.shown {
+				display: block;
+			}
+			
+		</style>
+		<script type='text/javascript'>
+			let header;
+			let attachmentButton;
+			let attachmentContainer;
+			
+			function initPost()
+			{
+				header = document.getElementsByClassName("wb")[0];
+				if(header == undefined)
+				{
+					alert("Failed to load document");
+					return false;
+				}
+					
+				attachmentButton = document.getElementById("KEU-atb");
+				attachmentContainer = document.getElementById("attachments");
+				if(attachmentButton == undefined || attachmentContainer == undefined)
+				{
+					alert("Failed to load attachment service");
+					return false;
+				}
+				
+				attachmentButton.addEventListener("click", attachmentButtonClick);
+			}
+			
+			function toggleAttachments()
+			{
+				let hidden = attachmentContainer.getAttribute("data-hidden");
+				if(hidden === "true")
+				{
+					attachmentContainer.className = "attachments shown";
+					attachmentContainer.setAttribute("data-hidden", "false");
+					
+					setTimeout(function()
+					{
+						attachmentContainer.style.opacity = 1;
+					}, 50);
+				}
+				else
+				{
+					attachmentContainer.style.opacity = 0;
+					
+					setTimeout(function()
+					{
+						attachmentContainer.className = "attachments";
+						attachmentContainer.setAttribute("data-hidden", "true");
+					}, 1000);
+				}
+			}
+			
+			function attachmentButtonClick(evt)
+			{
+				toggleAttachments();
+			}
+			
+			
+			
+			window.onload = initPost;
+		</script>
+	</head>
+	<body>
+		<div class='wb'>
+			<div class='title'>Isaac Leadbetter</div>
+			<div class='content'>
+				<p>Hey, I'm Isaac Leadbetter and I live in Hamilton, Ontario. I like all sorts of arts and sciences, such as computer programming, 2D and 3D Animation, Music production, math and photography. There isn't too much I don't like, but I'm not very fond of subjects like some Geography or Civics. My website is linked below and you can find out more information about me there.</p>
+				<button id='KEU-atb'>View Attachments</button>
+				<div id="attachments" class="attachments" data-hidden="true">
+					<div class="attachment">
+						<div class='label'>Link to external site</div>
+						<a href="https://cobaltfluoride.github.io" target="_blank">My Website</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
