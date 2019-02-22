@@ -6,11 +6,11 @@ include(RelativePath . "/Common.php");
 ini_set("max_execution_time",3600); 
 
 //****** Change this next folder name to what ever folder you want to import
-$start_dir = "/home/adelp634/public_html/upload/drywood/new/";
+$start_dir = "./upload/drywood/new/";
 //$start_dir = "/home/adelp634/public_html/upload/drywood/new/";
 
 //****** Change this next fields to the categories that you want - The Category Name must be exactly the same as the Category or it will be blank
-$cat1 = "";
+$cat1 = "Matt Drywood";
 $cat2 = "";
 $cat3 = "";
 $cat4 = "";
