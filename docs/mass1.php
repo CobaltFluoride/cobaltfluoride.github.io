@@ -54,7 +54,7 @@ if ($handle = opendir($start_dir))
 					if(!$res)
 					{
 						echo "Query failed! Reason: "  + mysql_error();
-						$dbl->close();
+						$db1->close();
 						die();
 					}
 				}
